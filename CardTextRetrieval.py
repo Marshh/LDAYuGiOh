@@ -11,9 +11,7 @@ response_list = response.json()
 card_list = list()
 
 ## Trim and writing to text file {"Name":..., "Text"}
-## Note: common words like 'when' and 'if' are not filtered because they have
-##       strong connotations in the game
-stopwords = "the and was that for can to be with this then of it its as a"
+stopwords = "on all do by were how the and was that for can to be with this also then of it in its as a when if you they your"
 
 ## filter_text function adapted from Professor Ihler's example
 def filter_text(text):
@@ -36,7 +34,7 @@ for x in response_list:
         )
         count+= 1
 
-card_file = open("card_text", "w")
+card_file = open("card_text.txt", "w")
 
 for card in card_list:
     card_file.writelines(json.dumps(card) + "\n") 
