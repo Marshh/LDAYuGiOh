@@ -11,7 +11,7 @@ response_list = response.json()
 card_list = list()
 
 ## Trim and writing to text file {"Name":..., "Text"}
-stopwords = "once only more use each 1 turn whose during has those these would into could while them either are than from on all do by were how the and was that for can to be with this also then of it in its as a when if you they their per but your"
+stopwords = "not up until after other cannot once only more use each 1 turn whose during has those these would into could while them either are than from on all do by were how the and was that for can to be with this also then of it in its as a when if you they their per but your"
 
 ## filter_text function adapted from Professor Ihler's example
 def filter_text(text):
