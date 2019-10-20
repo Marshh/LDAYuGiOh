@@ -21,10 +21,10 @@ The LDA Model was created based off David M. Blei, Andrew Y. Ng, and Michael I. 
 
 For this project, we perform searches on three queries using naive frequency and TF-IDF. We also created an LDA model on the card text, with the number of topics chosen to inference to be three to represent the card types in the game: spells, traps, and monsters. 
 
-Naive and TF-IDF Searches
+###Naive and TF-IDF Searches
 To perform these searches, we first calculated the TF of each document by taking in the entire list of documents and the words contained in that document and divided them. To calculate the IDF,  we took the entire list of documents and their word counts and took the log of the word count across the entire corpus. To calculate the TF-IDF, we simply multipled the TF and IDF of each document. We also kept each in a list such that each document is indexed.
 
-Naive Search
+###Naive Search
 For the naive frequency search, we took a search query and calculated that query’s frequency relative to each card’s text body. The queries we used to search were the keywords “summon”, “hand”, and “graveyard”. The top three results for the queries are as follows, along with graphs of the term frequency as the amount of documents increase:
 
 
@@ -32,13 +32,13 @@ For the naive frequency search, we took a search query and calculated that query
 
 
 
-TF-IDF
+###TF-IDF
 For the TF-IDF based search, we additionally calculated the IDF as a measure of how significant a word is within the entire corpus in order to calculate the TF-IDF. The top 3 results from the search for each query are as shown:
 
 
 
 
-LDA
+###LDA
 After obtaining a list of the cards and trimming them to just their descriptions, we focused on training the model to separate the cards and group them by monsters, spells, and traps. We used a low alpha of .001 and low beta of .001. 
 
 We then ran the model using Gibbs sampling inference in different iterations (0, 50, 100, 200) to obtain different results.
