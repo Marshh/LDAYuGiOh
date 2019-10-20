@@ -62,7 +62,7 @@ However, these results are difficult to interpret as many of the group’s keywo
 
 It is most likely more practical to sort cards that contain any instance of a query, and then sorting the results alphabetically. Our results from the naive and TF-IDF searches show marginal to little advantage in doing so. Furthermore, we would not recommend LDA for sorting trading cards which mainly uses general keywords in their card effects. We were unable to find any unique keywords that tied monsters, spells and traps to their respective topic; the keywords used in Yu-Gi-Oh are too general, and the text is too sparse to derive any latent relationships. LDA will work better for categories that have different topic with unique keywords, like sport articles. 
 
-References
+## References
 
 Ramos, Juan. "Using tf-idf to determine word relevance in document queries." Proceedings of the first instructional conference on machine learning. Vol. 242. 2003.
 
