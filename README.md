@@ -27,16 +27,17 @@ To perform these searches, we first calculated the TF of each document by taking
 ### Naive Search
 For the naive frequency search, we took a search query and calculated that query’s frequency relative to each card’s text body. The queries we used to search were the keywords “summon”, “hand”, and “graveyard”. The top three results for the queries are as follows, along with graphs of the term frequency as the amount of documents increase:
 
-
-
-
+[[https://github.com/Marshh/LDAYuGiOh/blob/master/Images/naiveSearchHand.png]]
+[[https://github.com/Marshh/LDAYuGiOh/blob/master/Images/naiveSeachGraveyard.png]]
+[[https://github.com/Marshh/LDAYuGiOh/blob/master/Images/naiveSearchSummon.png]]
 
 
 ### TF-IDF
 For the TF-IDF based search, we additionally calculated the IDF as a measure of how significant a word is within the entire corpus in order to calculate the TF-IDF. The top 3 results from the search for each query are as shown:
 
-
-
+[[https://github.com/Marshh/LDAYuGiOh/blob/master/Images/tfidfSearchHand.png]]
+[[https://github.com/Marshh/LDAYuGiOh/blob/master/Images/tfidfSearchGraveyard.PNG]]
+[[https://github.com/Marshh/LDAYuGiOh/blob/master/Images/tfidfSearchSummon.PNG]]
 
 ### LDA
 After obtaining a list of the cards and trimming them to just their descriptions, we focused on training the model to separate the cards and group them by monsters, spells, and traps. We used a low alpha of .001 and low beta of .001. 
