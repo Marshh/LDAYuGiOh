@@ -45,6 +45,7 @@ We then ran the model using Gibbs sampling inference in different iterations (0,
 
 These are the results after 0, 50, 100, and 200 iterations:
 
+![LDA YuGiOh Topics](https://github.com/Marshh/LDAYuGiOh/blob/master/Images/LDAYuGiOhResults.png)
 
 ## Conclusions
 
