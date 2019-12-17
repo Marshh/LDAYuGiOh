@@ -60,7 +60,9 @@ Additionally, the third topic which we identified as being related to monster ca
 
 However, these results are difficult to interpret as many of the group’s keywords are used in all three categories. They may be too general for the model to find any unique keywords that represent each type of card.
 
-It is most likely more practical to sort cards that contain any instance of a query, and then sorting the results alphabetically. Our results from the naive and TF-IDF searches show marginal to little advantage in doing so. Furthermore, we would not recommend LDA for sorting trading cards which mainly uses general keywords in their card effects. We were unable to find any unique keywords that tied monsters, spells and traps to their respective topic; the keywords used in Yu-Gi-Oh are too general, and the text is too sparse to derive any latent relationships. LDA will work better for categories that have different topic with unique keywords, like sport articles. 
+It is most likely more practical to sort cards that contain any instance of a query, and then sorting the results alphabetically. Our results from the naive and TF-IDF searches show marginal to little advantage in doing so. Furthermore, we would not recommend LDA for sorting trading cards which mainly uses general keywords in their card effects. We were unable to find any unique keywords that tied monsters, spells and traps to their respective topic; the keywords used in Yu-Gi-Oh are too general, and the text is too sparse to derive any latent relationships. LDA will work better for categories that have different topic with unique keywords, like sport articles.
+
+Further explorations that could have been done are adjusting and testing more alpha and beta hyperparameter values, experimenting with how cards may have a different levels of topics and topics having a different levels of words associated with that topic. 
 
 ## References
 
